@@ -1,0 +1,24 @@
+#fixedimg {
+  z-index: -2;
+}
+
+#main-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -160px;
+  padding: 0 25px;
+}
+#menu {
+}
+
+#shoppingCard {
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+
+#shoppingCard2 {
+  color: white;
+  width: 40px;
+  height: 40px;
+}

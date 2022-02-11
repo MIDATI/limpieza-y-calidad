@@ -1,0 +1,28 @@
+#main_title {
+  color: black;
+}
+.box {
+  border: 2px solid black;
+  text-align: center;
+  width: 97%;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+.inline_ {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: blue; */
+  /* width: 100%; */
+}
+.wb {
+  border: none;
+  border-radius: 0px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
