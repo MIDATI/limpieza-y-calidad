@@ -1,4 +1,5 @@
 import Catalog from "./pages/Catalog";
+
 import "./App.css";
 
 function App() {
@@ -54,7 +55,11 @@ function App() {
       categories: { litro: 18000, galon: null, garrafa: null },
     },
   ];
-  return <Catalog data={products} />;
+  return (
+    <>
+      <Catalog data={products} />
+    </>
+  );
 }
 
 export default App;

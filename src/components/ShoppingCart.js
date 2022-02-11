@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./ShoppingCart.css";
 import Product from "./Product";
-
+import Header from "./Header";
+import { Link } from "react-router-dom";
 function ShoppingCart() {
   const [selectedProducts, setSelectedProducts] = useState([
     {
@@ -35,7 +36,7 @@ function ShoppingCart() {
       image: "https://picsum.photos/200/500",
     },
   ]);
-  const [total, setTotal] = useState(0);
+  // const [total, setTotal] = useState(0);
   function handleDelete(id) {
     console.log(id);
     setSelectedProducts(
@@ -43,6 +44,16 @@ function ShoppingCart() {
     );
   }
   function renderProducts(selectedProducts) {
+    if (selectedProducts.length === 0) {
+      return (
+        <p style={{ textAlign: "center", marginTop: "50px" }}>
+          Tu Carrito de compras está vacío{" "}
+          <Link to="/">
+            <p>Regresar al catálogo</p>
+          </Link>
+        </p>
+      );
+    }
     return selectedProducts.map((product, idx) => {
       return (
         <Product
@@ -52,7 +63,6 @@ function ShoppingCart() {
           price={product.price}
           image={product.image}
           total={1}
-          key={idx}
           handleDelete={handleDelete}
         />
       );
@@ -61,7 +71,8 @@ function ShoppingCart() {
 
   return (
     <div>
-      <div className="box">
+      <Header />
+      <div id="main_box" className="box">
         <h1 id="main_title">
           Resumen de tu compra ({selectedProducts.length})
         </h1>

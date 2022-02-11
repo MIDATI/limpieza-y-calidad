@@ -18,7 +18,7 @@ function Catalog(props) {
 
   return (
     <div>
-      <Header />
+      <Header showcart={true} />
       <Filters style={{ marginTop: "85px", marginBottom: "85px" }} />
       <div>{renderCards(props.data)}</div>
     </div>

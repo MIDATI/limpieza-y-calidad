@@ -2,9 +2,9 @@ import "./Product.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  solid,
+  // solid,
   regular,
-  brands,
+  // brands,
 } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 function Product(props, { children }) {
@@ -75,6 +75,7 @@ function Product(props, { children }) {
           }}
         >
           <img
+            alt=""
             src={props.image}
             style={{
               width: "95%",
