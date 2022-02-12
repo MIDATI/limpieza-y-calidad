@@ -17,22 +17,27 @@
 
 #card {
   width: 502px;
-  height: 270px;
   left: 16px;
   top: 219px;
-
   border: 4px solid #0085c0;
   box-sizing: border-box;
   border-radius: 15px;
 }
-#button {
+.button {
   width: 162px;
   height: 43px;
   left: 28px;
   top: 405px;
-
+  background-color: #0783bf;
   border: 4px solid #0085c0;
   box-sizing: border-box;
   border-radius: 60px;
   margin: 10px;
+  color: white;
+  font-weight: bold;
+}
+.disabled {
+  background-color: gray;
+  background: gray;
+  transition: 200ms;
 }

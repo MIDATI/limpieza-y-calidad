@@ -37,7 +37,9 @@ function Product(props, { children }) {
             textAlign: "center",
           }}
         >
-          <p>{props.title}</p>
+          <p>
+            {props.title} ({props.selectedCategory})
+          </p>
         </div>
         <div
           style={{
